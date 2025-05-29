@@ -13,6 +13,8 @@
             tabuleiro[i][j] = 0;  // 0 representa água
         }
     }    
-
+    // 2. Declarando os navios como vetores (arrays unidimensionais)
+    int navioHorizontal[TAMANHO_NAVIO] = {3, 3, 3};  // Navio horizontal
+    int navioVertical[TAMANHO_NAVIO] = {3, 3, 3};    // Navio vertical
     return 0;
 }
