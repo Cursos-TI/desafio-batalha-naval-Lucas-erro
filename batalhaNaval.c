@@ -1,6 +1,4 @@
 #include <stdio.h>
-    int main(){
-    printf("Batalha Naval Novato!");
 
     #define TAMANHO_TABULEIRO 10  // Define o tamanho fixo do tabuleiro
     #define TAMANHO_NAVIO 3       // Define o tamanho fixo dos navios
@@ -22,7 +20,8 @@
     int colunaHorizontal = 4; // Coluna de início para navio horizontal
 
     int linhaVertical = 5;    // Linha de início para navio vertical
-    int linhaVertical = 5;    // Linha de início para navio vertical
+    int colunaVertical = 7;   // Coluna de início para navio vertical
+
 
     // 4. Posicionando o navio horizontal no tabuleiro
     for (int i = 0; i < TAMANHO_NAVIO; i++) {
@@ -39,5 +38,15 @@
             tabuleiro[linhaVertical + i][colunaVertical] = navioVertical[i];
         }
     }
+
+    // 6. Exibindo o tabuleiro no console
+    printf("Tabuleiro Batalha Naval:\n");
+    for (int i = 0; i < TAMANHO_TABULEIRO; i++) {
+        for (int j = 0; j < TAMANHO_TABULEIRO; j++) {
+            printf("%d ", tabuleiro[i][j]);  // Mostra 0 para água e 3 para parte de navio
+        }
+        printf("\n");  // Pula para a próxima linha após cada linha do tabuleiro
+    }
+
     return 0;
 }
