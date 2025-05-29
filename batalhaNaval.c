@@ -20,5 +20,8 @@
     // 3. Coordenadas iniciais para cada navio (definidas diretamente no código)
     int linhaHorizontal = 2;  // Linha de início para navio horizontal
     int colunaHorizontal = 4; // Coluna de início para navio horizontal
+
+    int linhaVertical = 5;    // Linha de início para navio vertical
+    int linhaVertical = 5;    // Linha de início para navio vertical
     return 0;
 }
