@@ -16,5 +16,9 @@
     // 2. Declarando os navios como vetores (arrays unidimensionais)
     int navioHorizontal[TAMANHO_NAVIO] = {3, 3, 3};  // Navio horizontal
     int navioVertical[TAMANHO_NAVIO] = {3, 3, 3};    // Navio vertical
+
+    // 3. Coordenadas iniciais para cada navio (definidas diretamente no código)
+    int linhaHorizontal = 2;  // Linha de início para navio horizontal
+    int colunaHorizontal = 4; // Coluna de início para navio horizontal
     return 0;
 }
