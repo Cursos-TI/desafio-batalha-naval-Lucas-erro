@@ -31,5 +31,13 @@
             tabuleiro[linhaHorizontal][colunaHorizontal + i] = navioHorizontal[i];
         }
     }    
+
+    // 5. Posicionando o navio vertical no tabuleiro
+    for (int i = 0; i < TAMANHO_NAVIO; i++) {
+        // Validação: garante que não vai ultrapassar o limite do tabuleiro
+        if (linhaVertical + i < TAMANHO_TABULEIRO) {
+            tabuleiro[linhaVertical + i][colunaVertical] = navioVertical[i];
+        }
+    }
     return 0;
 }
