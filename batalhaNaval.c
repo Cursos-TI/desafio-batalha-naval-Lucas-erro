@@ -23,5 +23,13 @@
 
     int linhaVertical = 5;    // Linha de início para navio vertical
     int linhaVertical = 5;    // Linha de início para navio vertical
+
+    // 4. Posicionando o navio horizontal no tabuleiro
+    for (int i = 0; i < TAMANHO_NAVIO; i++) {
+        // Validação: garante que não vai ultrapassar o limite do tabuleiro
+        if (colunaHorizontal + i < TAMANHO_TABULEIRO) {
+            tabuleiro[linhaHorizontal][colunaHorizontal + i] = navioHorizontal[i];
+        }
+    }    
     return 0;
 }
